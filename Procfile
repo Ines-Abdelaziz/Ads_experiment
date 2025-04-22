@@ -1,1 +1,1 @@
-web: python profile_setup.py
+worker: python profile_setup.py
