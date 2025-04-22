@@ -1,0 +1,1 @@
+web: python profile_setup.py
