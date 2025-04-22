@@ -10,9 +10,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import os
 
-# Expand ~ to full home path
-home_dir = os.path.expanduser("~")
+import chromedriver_autoinstaller
 
+chromedriver_autoinstaller.install()
 
 # Set up Chrome options
 options = Options()
