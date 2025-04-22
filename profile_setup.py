@@ -13,8 +13,6 @@ import os
 # Expand ~ to full home path
 home_dir = os.path.expanduser("~")
 
-# Chrome user data root directory
-user_data_dir = os.path.join(home_dir, "Library", "Application Support", "Google", "Chrome")
 
 # Set up Chrome options
 options = Options()
