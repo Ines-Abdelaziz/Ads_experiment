@@ -14,6 +14,9 @@ import os
 # Set up Chrome options
 options = Options()
 #add headless option 
+options.add_argument('--user-data-dir=/tmp/chrome-user-data')
+options.add_argument('--remote-debugging-port=9222')
+
 options.add_argument("--headless=new")  # << Use new headless mode
 options.add_argument("--window-size=1920,1080")  # Important for rendering properly
 options.add_experimental_option("excludeSwitches", ["enable-automation"])
