@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
+import requests
+
 
 import json
 
@@ -92,11 +94,13 @@ for cookie in cookies:
         del cookie['sameSite']  # Avoid errors
     driver.add_cookie(cookie)
 
-driver.get("https://www.google.com/")
+response = requests.get('https://ipinfo.io')
+data = response.json()
+country = data.get('country', 'Unknown')
+
+print(f"Country: {country}")
+driver.get("https://myaccount.google.com/")
 time.sleep(2)  # Wait for the page to load
-#get loaction
-location = driver.find_element(By.XPATH, '/html/body/div[1]/div[6]/div/div[1]')
-print(location.text)
 #screenshot
 driver.save_screenshot("location.png")
 
