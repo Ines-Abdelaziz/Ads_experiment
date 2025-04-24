@@ -68,7 +68,7 @@ try:
     password_input = driver.find_element(By.NAME, "Passwd")
 except:
     #save png screenshot
-    driver.save_screenshot("e.png")
+    driver.save_screenshot("error.png")
 
 password="PoodlesNoodles123!"
 password_input.send_keys(password)
