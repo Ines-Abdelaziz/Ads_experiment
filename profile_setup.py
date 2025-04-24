@@ -83,12 +83,13 @@ next_button.click()
 
 
 # 6. Wait for the login to complete
-time.sleep(2)  
+time.sleep(5)  
+driver.save_screenshot("e3.png")
 
 
 driver.get("https://www.google.com/")
 time.sleep(2)  # Wait for the page to load
-driver.save_screenshot("e3.png")
+driver.save_screenshot("e4.png")
 
 # # 🍪 Load cookies
 # with open("cookies.json", "r") as f:
@@ -107,5 +108,5 @@ print(f"Country: {country}")
 driver.get("https://mail.google.com/mail/")
 time.sleep(2)  # Wait for the page to load
 #screenshot
-driver.save_screenshot("e4.png")
+driver.save_screenshot("e5.png")
 
