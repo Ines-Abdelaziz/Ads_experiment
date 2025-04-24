@@ -51,48 +51,48 @@ driver = webdriver.Chrome(options=options)
 
 
 
-# # 1. Go to Google Login
-# driver.get("https://accounts.google.com/")
-# time.sleep(5)  # Wait for the page to load
-# # 2. Enter email in the email field
-# email_input = driver.find_element(By.ID, "identifierId")
-# email="dereksloane1@gmail.com"
-# email_input.send_keys(email)
-# # 3. Click Next
-# next_button = driver.find_element(By.ID, "identifierNext")
-# next_button.click()
-# time.sleep(5)  # Wait for the next page to load
-# # 4. Enter password in the password field
-# #try catch for password field
-# try:
-#     password_input = driver.find_element(By.NAME, "Passwd")
-# except:
-#     #save png screenshot
-#     driver.save_screenshot("error.png")
+# 1. Go to Google Login
+driver.get("https://accounts.google.com/")
+time.sleep(5)  # Wait for the page to load
+# 2. Enter email in the email field
+email_input = driver.find_element(By.ID, "identifierId")
+email="dereksloane1@gmail.com"
+email_input.send_keys(email)
+# 3. Click Next
+next_button = driver.find_element(By.ID, "identifierNext")
+next_button.click()
+time.sleep(5)  # Wait for the next page to load
+# 4. Enter password in the password field
+#try catch for password field
+try:
+    password_input = driver.find_element(By.NAME, "Passwd")
+except:
+    #save png screenshot
+    driver.save_screenshot("error.png")
 
-# password="PoodlesNoodles123!"
-# password_input.send_keys(password)
-# # 5. Click Next
-# next_button = driver.find_element(By.ID, "passwordNext")
-# next_button.click()
+password="PoodlesNoodles123!"
+password_input.send_keys(password)
+# 5. Click Next
+next_button = driver.find_element(By.ID, "passwordNext")
+next_button.click()
 
 
-# # 6. Wait for the login to complete
-# time.sleep(2)  
+# 6. Wait for the login to complete
+time.sleep(2)  
 
 
 driver.get("https://www.google.com/")
 
 time.sleep(2)  # Wait for the page to load
 
-# 🍪 Load cookies
-with open("cookies.json", "r") as f:
-    cookies = json.load(f)
+# # 🍪 Load cookies
+# with open("cookies.json", "r") as f:
+#     cookies = json.load(f)
 
-for cookie in cookies:
-    if 'sameSite' in cookie:
-        del cookie['sameSite']  # Avoid errors
-    driver.add_cookie(cookie)
+# for cookie in cookies:
+#     if 'sameSite' in cookie:
+#         del cookie['sameSite']  # Avoid errors
+#     driver.add_cookie(cookie)
 
 response = requests.get('https://ipinfo.io')
 data = response.json()
