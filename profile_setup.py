@@ -86,10 +86,23 @@ next_button.click()
 time.sleep(5)  
 driver.save_screenshot("e3.png")
 
+try:
+    recovery_button = driver.find_element(
+        By.XPATH,
+        "//li[contains(., 'Confirm your recovery phone number')]"
+    )
+    print("Element found:", recovery_button.text)
+    recovery_button.click()  # Optional
+    time.sleep(5)  
+    driver.save_screenshot("e4.png")
+except Exception as e:
+    print("Element not found:", str(e))
+    driver.save_screenshot("confirm_phone_not_found.png")
+
 
 driver.get("https://www.google.com/")
 time.sleep(2)  # Wait for the page to load
-driver.save_screenshot("e4.png")
+driver.save_screenshot("e5.png")
 
 # # 🍪 Load cookies
 # with open("cookies.json", "r") as f:
@@ -110,5 +123,5 @@ print(f"Country: {country}")
 driver.get("https://mail.google.com/mail/")
 time.sleep(2)  # Wait for the page to load
 #screenshot
-driver.save_screenshot("e5.png")
+driver.save_screenshot("e6.png")
 
