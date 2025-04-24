@@ -99,7 +99,7 @@ data = response.json()
 country = data.get('country', 'Unknown')
 
 print(f"Country: {country}")
-driver.get("https://myaccount.google.com/")
+driver.get("https://myaccount.google.com/?utm_source=chrome-profile-chooser&pli=1")
 time.sleep(2)  # Wait for the page to load
 #screenshot
 driver.save_screenshot("e.png")
