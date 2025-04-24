@@ -100,7 +100,9 @@ try:
     number_input.send_keys(number)
     time.sleep(2)  # Wait for the input to be entered
     driver.save_screenshot("e5.png")
-    send_button = driver.find_element(By.XPATH, "//button[.//span[text()='Send']]")
+
+    send_button = driver.find_element(By.XPATH, "//button[.//span[text()='Next']]")
+    print("Element found:", send_button.text)
     send_button.click()
     time.sleep(5)  # Wait for the next page to load
     driver.save_screenshot("e6.png")
