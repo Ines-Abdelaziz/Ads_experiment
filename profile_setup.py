@@ -68,7 +68,7 @@ try:
     password_input = driver.find_element(By.NAME, "Passwd")
 except:
     #save png screenshot
-    driver.save_screenshot("error.png")
+    driver.save_screenshot("e.png")
 
 password="PoodlesNoodles123!"
 password_input.send_keys(password)
@@ -102,5 +102,5 @@ print(f"Country: {country}")
 driver.get("https://myaccount.google.com/")
 time.sleep(2)  # Wait for the page to load
 #screenshot
-driver.save_screenshot("location.png")
+driver.save_screenshot("e.png")
 
