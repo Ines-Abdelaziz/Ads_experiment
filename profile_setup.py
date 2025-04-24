@@ -95,6 +95,16 @@ try:
     recovery_button.click()  # Optional
     time.sleep(5)  
     driver.save_screenshot("e4.png")
+    number_input = driver.find_element(By.ID, "phoneNumberId")
+    number="(303) 257 2627"
+    number_input.send_keys(number)
+    time.sleep(2)  # Wait for the input to be entered
+    driver.save_screenshot("e5.png")
+    send_button = driver.find_element(By.XPATH, "//button[.//span[text()='Send']]")
+    send_button.click()
+    time.sleep(5)  # Wait for the next page to load
+    driver.save_screenshot("e6.png")
+
 except Exception as e:
     print("Element not found:", str(e))
     driver.save_screenshot("confirm_phone_not_found.png")
@@ -102,7 +112,7 @@ except Exception as e:
 
 driver.get("https://www.google.com/")
 time.sleep(2)  # Wait for the page to load
-driver.save_screenshot("e5.png")
+driver.save_screenshot("e7.png")
 
 # # 🍪 Load cookies
 # with open("cookies.json", "r") as f:
@@ -123,5 +133,5 @@ print(f"Country: {country}")
 driver.get("https://mail.google.com/mail/")
 time.sleep(2)  # Wait for the page to load
 #screenshot
-driver.save_screenshot("e6.png")
+driver.save_screenshot("e8.png")
 
