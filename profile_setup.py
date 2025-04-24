@@ -103,6 +103,8 @@ driver.save_screenshot("e4.png")
 response = requests.get('https://ipinfo.io')
 data = response.json()
 country = data.get('country', 'Unknown')
+ip_address = data.get('ip', 'Unknown')
+print(f"IP Address: {ip_address}")
 
 print(f"Country: {country}")
 driver.get("https://mail.google.com/mail/")
