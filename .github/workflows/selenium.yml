@@ -47,5 +47,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: google-location-screenshot
-          path: e.png
+          path: | 
+            e1.png
+            e2.png
+            e3.png
+            e4.png
+
       

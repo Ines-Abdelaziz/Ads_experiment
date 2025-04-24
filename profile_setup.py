@@ -58,6 +58,8 @@ time.sleep(5)  # Wait for the page to load
 email_input = driver.find_element(By.ID, "identifierId")
 email="dereksloane1@gmail.com"
 email_input.send_keys(email)
+time.sleep(2)  # Wait for the input to be entered
+driver.save_screenshot("e1.png")
 # 3. Click Next
 next_button = driver.find_element(By.ID, "identifierNext")
 next_button.click()
@@ -65,6 +67,7 @@ time.sleep(5)  # Wait for the next page to load
 # 4. Enter password in the password field
 #try catch for password field
 try:
+   
     password_input = driver.find_element(By.NAME, "Passwd")
 except:
     #save png screenshot
@@ -72,6 +75,8 @@ except:
 
 password="PoodlesNoodles123!"
 password_input.send_keys(password)
+time.sleep(2)  # Wait for the input to be entered
+driver.save_screenshot("e2.png")
 # 5. Click Next
 next_button = driver.find_element(By.ID, "passwordNext")
 next_button.click()
@@ -82,8 +87,8 @@ time.sleep(2)
 
 
 driver.get("https://www.google.com/")
-
 time.sleep(2)  # Wait for the page to load
+driver.save_screenshot("e3.png")
 
 # # 🍪 Load cookies
 # with open("cookies.json", "r") as f:
@@ -99,8 +104,8 @@ data = response.json()
 country = data.get('country', 'Unknown')
 
 print(f"Country: {country}")
-driver.get("https://myaccount.google.com/?utm_source=chrome-profile-chooser&pli=1")
+driver.get("https://mail.google.com/mail/")
 time.sleep(2)  # Wait for the page to load
 #screenshot
-driver.save_screenshot("e.png")
+driver.save_screenshot("e4.png")
 
