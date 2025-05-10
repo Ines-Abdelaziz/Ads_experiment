@@ -1,0 +1,6 @@
+2025/05/06-18:06:54.173 d8f9a2 Creating DB /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 21/IndexedDB/https_auto.hindustantimes.com_0.indexeddb.leveldb since it was missing.
+2025/05/06-18:06:54.209 d8f9a2 Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 21/IndexedDB/https_auto.hindustantimes.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/06-18:07:27.131 d8f975 Level-0 table #5: started
+2025/05/06-18:07:27.143 d8f975 Level-0 table #5: 3729 bytes OK
+2025/05/06-18:07:27.156 d8f975 Delete type=0 #3
+2025/05/06-18:07:27.156 d8f975 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

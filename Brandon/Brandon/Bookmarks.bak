@@ -1,0 +1,37 @@
+{
+   "checksum": "942764d02172e0ac56471532a4f3f57c",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13390922897167089",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13390922897167093",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13390922897167095",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CmEKQQiIgQISOyAAkgE2CjQKDmNocm9tZV9zeW5jX2JtEgU1MSFibRoSCUW1RZd8NAYAEUW1RZd8NAYAKd8NRpd8NAYAEgAqGC9Kc05jWWh2MFFvVjRLU0licldQWFE9PUgDEsMBCAMSvgEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SZlo6QURxdEFaelJRbHZjZ1o2eHQyYS8yUUtWM05saFJMaTZsVTJNTHBrWXkwUXZveWQxTmNlOGxiS3BETnBLeGtqc1dreG1idHNTeWtaSitCZlFEQ1FNQXRwVVJxM0F5R0QyOUE9PRgAIAAoADDguo6PlIyNAzgAQABKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAEsMBCAISvgEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SZlo6QURxdEFad2p6QWZJOEg1TktFbHNZVUNsZTR3NFlnMm5VUG92Z1NrZG4ybllTclU1V3p6bEg0aGgvVGhEL2Q5MGZjekNibFRnN0pJWnhGV3VJdnVrWGJIcURqaVp6UmxURXc9PRgAIAAoADDguo6PlIyNAzgAQABKHG9QVmtod0JSYlY2NUtDV1IyK0lPTkhXb091OD1aAGUAAAAAEqsBCAESpgEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0STlo6QURxdEFaelc5RjRzZmQzUEZLWnlCK3o1UEdjalpnTTFsd2x6OVB3TC9RdWIxYnNnd1VOQzhidnJHVjNoSWkvT2NiVEhERXdCVzVSRxgAIAAoADDguo6PlIyNAzgAQABKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAMAE4AA==",
+   "version": 1
+}

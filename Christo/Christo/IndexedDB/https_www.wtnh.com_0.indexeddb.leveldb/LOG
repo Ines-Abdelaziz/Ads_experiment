@@ -1,0 +1,6 @@
+2025/05/06-16:47:16.290 d4e14d Creating DB /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 22/IndexedDB/https_www.wtnh.com_0.indexeddb.leveldb since it was missing.
+2025/05/06-16:47:16.299 d4e14d Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 22/IndexedDB/https_www.wtnh.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/06-16:47:23.454 d4e15c Level-0 table #5: started
+2025/05/06-16:47:23.468 d4e15c Level-0 table #5: 8897 bytes OK
+2025/05/06-16:47:23.527 d4e15c Delete type=0 #3
+2025/05/06-16:47:23.527 d4e15c Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

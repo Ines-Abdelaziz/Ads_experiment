@@ -1,0 +1,27 @@
+2025/05/06-23:16:49.027 ea6dd0 Creating DB /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 19/IndexedDB/https_fox4kc.com_0.indexeddb.leveldb since it was missing.
+2025/05/06-23:16:49.038 ea6dd0 Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 19/IndexedDB/https_fox4kc.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/06-23:16:52.619 ea6dd2 Level-0 table #5: started
+2025/05/06-23:16:52.633 ea6dd2 Level-0 table #5: 8884 bytes OK
+2025/05/06-23:16:52.656 ea6dd2 Delete type=0 #3
+2025/05/06-23:16:52.656 ea6dd0 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-23:17:00.650 ea6dd0 Level-0 table #7: started
+2025/05/06-23:17:00.661 ea6dd0 Level-0 table #7: 300731 bytes OK
+2025/05/06-23:17:00.669 ea6dd0 Delete type=0 #4
+2025/05/06-23:17:00.669 ea6dd0 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-23:17:31.140 ea6dd2 Compacting 1@1 + 1@2 files
+2025/05/06-23:17:31.169 ea6dd2 Generated table #8@1: 153 keys, 39847 bytes
+2025/05/06-23:17:31.169 ea6dd2 Compacted 1@1 + 1@2 files => 39847 bytes
+2025/05/06-23:17:31.175 ea6dd2 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/05/06-23:17:31.175 ea6dd0 Level-0 table #10: started
+2025/05/06-23:17:31.187 ea6dd0 Level-0 table #10: 1047176 bytes OK
+2025/05/06-23:17:31.188 ea6dd0 Delete type=0 #6
+2025/05/06-23:17:31.189 ea6dd0 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-23:18:12.799 ea6dd2 Compacting 1@1 + 1@2 files
+2025/05/06-23:18:12.817 ea6dd2 Generated table #11@1: 153 keys, 48922 bytes
+2025/05/06-23:18:12.817 ea6dd2 Compacted 1@1 + 1@2 files => 48922 bytes
+2025/05/06-23:18:12.819 ea6dd2 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/05/06-23:18:12.819 ea6dd2 Delete type=2 #7
+2025/05/06-23:18:12.819 ea6dd2 Delete type=2 #10
+2025/05/06-23:18:12.819 ea6dd2 Delete type=2 #5
+2025/05/06-23:18:12.819 ea6dd2 Delete type=2 #8
+2025/05/06-23:18:13.370 ea6dde Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)

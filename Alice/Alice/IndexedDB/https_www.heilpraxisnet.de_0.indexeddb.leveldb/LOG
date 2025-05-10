@@ -1,0 +1,6 @@
+2025/05/06-23:22:50.938 ea6dd0 Creating DB /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 19/IndexedDB/https_www.heilpraxisnet.de_0.indexeddb.leveldb since it was missing.
+2025/05/06-23:22:50.953 ea6dd0 Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 19/IndexedDB/https_www.heilpraxisnet.de_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/06-23:23:04.593 ea6de0 Level-0 table #5: started
+2025/05/06-23:23:04.604 ea6de0 Level-0 table #5: 586 bytes OK
+2025/05/06-23:23:04.606 ea6de0 Delete type=0 #3
+2025/05/06-23:23:04.606 ea6dd0 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

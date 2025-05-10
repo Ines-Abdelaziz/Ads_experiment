@@ -26,7 +26,6 @@ jobs:
             unzip chromedriver.zip
             sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
             sudo chmod +x /usr/local/bin/chromedriver
-        
 
       - name: Install dependencies
         run: |
@@ -34,27 +33,32 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests selenium
 
-      - name: Run Selenium script
-        run: python profile_setup.py
+      - name: Check if within allowed hours
+        id: check_time
+        run: |
+          # Define time ranges (US Eastern Time)
+          current_hour=$(TZ="America/New_York" date +%H)
+          if [[ "$current_hour" -ge 8 && "$current_hour" -lt 12 ]] || \
+             [[ "$current_hour" -ge 13 && "$current_hour" -lt 17 ]] || \
+             [[ "$current_hour" -ge 18 && "$current_hour" -lt 23 ]] || \
+             [[ "$current_hour" -ge 0 && "$current_hour" -lt 2 ]]; then
+            echo "Within allowed time range."
+            echo "::set-output name=proceed::true"
+          else
+            echo "Outside allowed time range. Pausing execution."
+            echo "::set-output name=proceed::false"
+          fi
 
-      - name: Upload error screenshot
-        if: failure()  # This condition ensures the artifact is uploaded only if the script fails
-        uses: actions/upload-artifact@v4
-        with:
-          name: error-screenshot
-          path: error.png
-      - name: Upload screenshot
-        uses: actions/upload-artifact@v4
-        with:
-          name: google-location-screenshot
-          path: | 
-            e1.png
-            e2.png
-            e3.png
-            e4.png
-            e5.png
-            e6.png
-            e7.png
-            e8.png
+      - name: Run user scripts
+        if: steps.check_time.outputs.proceed == 'true'
+        run: |
+          # Run the user's script based on passed argument
+          USER_FOLDERS=("Alex" "Alice" "Bob" "Brandon" "Christo" "Cristina" "Derek" "Georgiana" "Lexie" "Mark" "Marly" "Molly" "Neutral")
+          for USER in "${USER_FOLDERS[@]}"; do
+            echo "Running script for $USER"
+            cd ${{ github.workspace }}/$USER  # Navigate to the user-specific folder
+            chmod +x run_profile.sh
+            ./run_profile.sh /path/to/batches  # Adjust the batch path if necessary
+          done
 
-      
+    

@@ -1,0 +1,8 @@
+2025/05/07-01:22:35.013 ea6de0 Creating DB /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 13/IndexedDB/https_www.fox13seattle.com_0.indexeddb.leveldb since it was missing.
+2025/05/07-01:22:35.027 ea6de0 Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 13/IndexedDB/https_www.fox13seattle.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/07-01:22:35.034 ea6dde Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/07-01:22:41.324 ea6dd2 Manual compaction at level-0 from '\x00\x09\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0a\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/07-01:22:46.445 ea6e00 Level-0 table #5: started
+2025/05/07-01:22:46.451 ea6e00 Level-0 table #5: 19044 bytes OK
+2025/05/07-01:22:46.453 ea6e00 Delete type=0 #3
+2025/05/07-01:22:46.454 ea6dd0 Manual compaction at level-0 from '\x00\x0a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at (end)

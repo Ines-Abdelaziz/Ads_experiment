@@ -1,0 +1,19 @@
+2025/05/06-15:44:31.873 cfc110 Creating DB /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 12/IndexedDB/https_www.valleycentral.com_0.indexeddb.leveldb since it was missing.
+2025/05/06-15:44:31.884 cfc110 Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 12/IndexedDB/https_www.valleycentral.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/06-15:44:40.055 cfc110 Level-0 table #5: started
+2025/05/06-15:44:40.092 cfc110 Level-0 table #5: 11458 bytes OK
+2025/05/06-15:44:40.119 cfc110 Delete type=0 #3
+2025/05/06-15:44:40.120 cfc110 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-15:44:47.918 cfc124 Level-0 table #7: started
+2025/05/06-15:44:47.939 cfc124 Level-0 table #7: 1455 bytes OK
+2025/05/06-15:44:47.968 cfc124 Delete type=0 #4
+2025/05/06-15:44:47.969 cfc110 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-15:44:47.969 cfc110 Manual compaction at level-1 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at '\x00\x05\x00\x00\xc8\x06\x00v\x00i\x00s\x00i\x00t\x00s' @ 768 : 1
+2025/05/06-15:44:47.969 cfc110 Compacting 1@1 + 1@2 files
+2025/05/06-15:44:47.976 cfc110 Generated table #8@1: 133 keys, 2843 bytes
+2025/05/06-15:44:47.976 cfc110 Compacted 1@1 + 1@2 files => 2843 bytes
+2025/05/06-15:44:47.977 cfc110 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/05/06-15:44:47.977 cfc110 Delete type=2 #7
+2025/05/06-15:44:47.977 cfc110 Manual compaction at level-1 from '\x00\x05\x00\x00\xc8\x06\x00v\x00i\x00s\x00i\x00t\x00s' @ 768 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-15:44:54.356 cfc112 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-15:44:54.357 cfc110 Manual compaction at level-1 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)

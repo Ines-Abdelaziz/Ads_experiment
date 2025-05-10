@@ -1,0 +1,10 @@
+2025/05/06-15:46:02.946 cfc110 Creating DB /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 12/WebStorage/51/IndexedDB/indexeddb.leveldb since it was missing.
+2025/05/06-15:46:02.959 cfc110 Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 12/WebStorage/51/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2025/05/06-15:46:02.962 cfc121 Level-0 table #5: started
+2025/05/06-15:46:02.968 cfc121 Level-0 table #5: 1056 bytes OK
+2025/05/06-15:46:02.969 cfc121 Delete type=0 #3
+2025/05/06-15:46:02.969 cfc110 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-15:46:11.175 cfc110 Level-0 table #7: started
+2025/05/06-15:46:11.196 cfc110 Level-0 table #7: 1770 bytes OK
+2025/05/06-15:46:11.200 cfc110 Delete type=0 #4
+2025/05/06-15:46:11.201 cfc110 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

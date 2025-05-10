@@ -1,0 +1,47 @@
+[25619:17383639:0507/181809.418427:INFO:chrome_browser_cloud_management_controller.cc(202)] No machine level policy manager exists.
+[25619:17383816:0507/181809.486050:ERROR:token_service_table.cc(189)] Failed to decrypt token for service AccountId-111045917993637457557
+[25619:17383639:0507/181810.840393:INFO:CONSOLE(15)] "Service Worker Loaded", source: chrome-extension://phodlngepckggdblipffhdhkinobaiif/assets/service-worker.ts-Ced1skHI.js (15)
+[25619:17383639:0507/181812.038981:INFO:CONSOLE(0)] "[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o", source: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=ASKV5Mg-mZ-BH1xwdmC_DI6GcEHr_Roa77KSHA_jCRvAWHLvT9boYkIsp4e6THAMm5Kmx8fCrDG9LQ&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1194807620%3A1746634691659783 (0)
+[25619:17383639:0507/181812.041815:INFO:CONSOLE(435)] "%c%s color: red; background: yellow; font-size: 24px; WARNING!", source: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.en_US.hEXn5l5-o5k.es5.O/am=iQEwVjKZRiAgIopZkM4CIwEhAwAAAAAAAAAANgAAgDkG/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlEzieNMGA4TFDXT1alak-CaPW4aWA/m=_b,_tp (435)
+[25619:17383639:0507/181812.041847:INFO:CONSOLE(435)] "%c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you do not understand.", source: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.en_US.hEXn5l5-o5k.es5.O/am=iQEwVjKZRiAgIopZkM4CIwEhAwAAAAAAAAAANgAAgDkG/d=1/excm=_b,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlEzieNMGA4TFDXT1alak-CaPW4aWA/m=_b,_tp (435)
+[25619:17383639:0507/181812.150514:WARNING:hid_collection.cc(240)] encountered report item with invalid report size (16384>32)
+[25619:17383639:0507/181812.150562:WARNING:hid_collection.cc(240)] encountered report item with invalid report size (16384>32)
+[25619:17383639:0507/181812.150585:WARNING:hid_collection.cc(240)] encountered report item with invalid report size (16384>32)
+[25619:17383639:0507/181812.150609:WARNING:hid_collection.cc(240)] encountered report item with invalid report size (16384>32)
+[25619:17383639:0507/181812.150639:WARNING:hid_collection.cc(240)] encountered report item with invalid report size (16384>32)
+[25619:17383639:0507/181812.150669:WARNING:hid_collection.cc(240)] encountered report item with invalid report size (16384>32)
+[25619:17383639:0507/181812.150798:WARNING:hid_collection.cc(240)] encountered report item with invalid report size (50>32)
+[25619:17383639:0507/181812.150874:WARNING:hid_collection.cc(240)] encountered report item with invalid report size (16024>32)
+[25619:17383639:0507/181812.150878:WARNING:hid_collection.cc(240)] encountered report item with invalid report size (1048>32)
+[25619:17383639:0507/181814.600761:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
+[25619:17383639:0507/181814.600920:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
+[25619:17383639:0507/181814.600945:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
+[25619:17383639:0507/181814.600953:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
+[25619:17383793:0507/181816.481984:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[25619:17383639:0507/181821.223034:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
+[25619:17383639:0507/181821.223237:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
+[25619:17383639:0507/181828.250049:INFO:CONSOLE(349)] "%c%s color: red; background: yellow; font-size: 24px; WARNING!", source: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.SpeedBumpPasskeyEnrollmentUi.en_US.mjQzIk7bC_Q.es5.O/am=CICRYoOAZRboDAAMAAAAAAAAAAAGAAACAw/d=1/excm=_b,_tp,passkeyenrollmentview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlHsx5rv4om5Ptu7FOKwIjnw4snJTw/m=_b,_tp (349)
+[25619:17383639:0507/181828.250252:INFO:CONSOLE(349)] "%c%s font-size: 18px; Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you do not understand.", source: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.SpeedBumpPasskeyEnrollmentUi.en_US.mjQzIk7bC_Q.es5.O/am=CICRYoOAZRboDAAMAAAAAAAAAAAGAAACAw/d=1/excm=_b,_tp,passkeyenrollmentview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlHsx5rv4om5Ptu7FOKwIjnw4snJTw/m=_b,_tp (349)
+[25619:17383639:0507/181833.313454:INFO:CONSOLE(1)] "Content script loaded.", source: chrome-extension://phodlngepckggdblipffhdhkinobaiif/assets/content-scrpt.ts-C3ggj3ks.js (1)
+[25619:17383639:0507/181834.188779:INFO:CONSOLE(9593)] "LegacyDataMixin will be applied to all legacy elements.
+Set `_legacyUndefinedCheck: true` on element class to enable.", source: https://www.youtube.com/s/_/ytmainappweb/_/js/k=ytmainappweb.kevlar_base.en_US.vAn3DADFU-I.es5.O/d=0/br=1/rs=AGKMywG-rHD18OWTr6RXlMPqZxijbj_HLA (9593)
+[25619:17383639:0507/181834.564715:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.audio_input.user_preference_ranking because media.default_audio_capture_device isn't registered or is empty
+[25619:17383639:0507/181834.564746:WARNING:capture_device_ranking.h(255)] Can't initialize the value of media.video_input.user_preference_ranking because media.default_video_capture_Device isn't registered or is empty
+[25619:17383639:0507/181837.235808:INFO:CONSOLE(0)] "Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.", source: https://www.youtube.com/watch?v=rgaqwFPU7cc (0)
+[25619:17383639:0507/181837.702005:INFO:CONSOLE(15)] "found a network call of new video id", source: chrome-extension://phodlngepckggdblipffhdhkinobaiif/assets/service-worker.ts-Ced1skHI.js (15)
+[25619:17383639:0507/181837.702271:INFO:CONSOLE(15)] "the video id is an AD id: ybe5Y1ojBOE", source: chrome-extension://phodlngepckggdblipffhdhkinobaiif/assets/service-worker.ts-Ced1skHI.js (15)
+[25619:17383639:0507/181837.702284:INFO:CONSOLE(15)] "subtitles are : ", source: chrome-extension://phodlngepckggdblipffhdhkinobaiif/assets/service-worker.ts-Ced1skHI.js (15)
+[25619:17383793:0507/181838.023224:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[25619:17383782:0507/181839.495418:INFO:extension_garbage_collector.cc(183)] Garbage collection for extensions on file thread is complete.
+[25619:17383639:0507/181840.866232:INFO:CONSOLE(1)] "New ad detected:", source: chrome-extension://phodlngepckggdblipffhdhkinobaiif/assets/content-scrpt.ts-C3ggj3ks.js (1)
+[25619:17383639:0507/181840.869630:INFO:CONSOLE(1)] "Video ID: ybe5Y1ojBOE", source: chrome-extension://phodlngepckggdblipffhdhkinobaiif/assets/content-scrpt.ts-C3ggj3ks.js (1)
+[25619:17383639:0507/181840.869662:INFO:CONSOLE(1)] "Processing ad video ID: ybe5Y1ojBOE ", source: chrome-extension://phodlngepckggdblipffhdhkinobaiif/assets/content-scrpt.ts-C3ggj3ks.js (1)
+[25619:17383639:0507/181840.869678:INFO:CONSOLE(1)] "[object HTMLButtonElement]", source: chrome-extension://phodlngepckggdblipffhdhkinobaiif/assets/content-scrpt.ts-C3ggj3ks.js (1)
+[25619:17383639:0507/181840.890618:INFO:CONSOLE(0)] "requestStorageAccessFor: Must be handling a user gesture to use.", source: https://www.youtube.com/watch?v=rgaqwFPU7cc (0)
+[25619:17383639:0507/181840.890689:INFO:CONSOLE(0)] "requestStorageAccessFor: Permission denied.", source: https://www.youtube.com/watch?v=rgaqwFPU7cc (0)
+[25619:17383639:0507/181840.890760:INFO:CONSOLE(0)] "requestStorageAccessFor: Must be handling a user gesture to use.", source: https://www.youtube.com/watch?v=rgaqwFPU7cc (0)
+[25619:17383639:0507/181840.890785:INFO:CONSOLE(0)] "requestStorageAccessFor: Must be handling a user gesture to use.", source: https://www.youtube.com/watch?v=rgaqwFPU7cc (0)
+[25619:17383639:0507/181840.892266:INFO:CONSOLE(0)] "requestStorageAccessFor: Permission denied.", source: https://www.youtube.com/watch?v=rgaqwFPU7cc (0)
+[25619:17383639:0507/181840.892316:INFO:CONSOLE(0)] "requestStorageAccessFor: Permission denied.", source: https://www.youtube.com/watch?v=rgaqwFPU7cc (0)

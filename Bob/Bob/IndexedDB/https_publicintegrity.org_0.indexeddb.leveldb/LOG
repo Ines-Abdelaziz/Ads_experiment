@@ -1,0 +1,6 @@
+2025/05/07-01:06:32.372 ea6dd0 Creating DB /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 20/IndexedDB/https_publicintegrity.org_0.indexeddb.leveldb since it was missing.
+2025/05/07-01:06:32.393 ea6dd0 Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 20/IndexedDB/https_publicintegrity.org_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/07-01:07:42.175 ea6dd2 Level-0 table #5: started
+2025/05/07-01:07:42.205 ea6dd2 Level-0 table #5: 52732 bytes OK
+2025/05/07-01:07:42.208 ea6dd2 Delete type=0 #3
+2025/05/07-01:07:42.209 ea6dd2 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

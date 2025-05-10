@@ -1,0 +1,6 @@
+2025/05/05-12:18:00.482 9ea800 Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 12/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/05-12:18:00.489 9ea800 Recovering log #3
+2025/05/05-12:18:00.489 9ea800 Reusing old log /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 12/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
+2025/05/05-12:19:24.918 9ea802 Level-0 table #5: started
+2025/05/05-12:19:24.947 9ea802 Level-0 table #5: 3140647 bytes OK
+2025/05/05-12:19:24.948 9ea802 Delete type=0 #3

@@ -1,0 +1,21 @@
+2025/05/06-23:21:05.701 ea6dd0 Creating DB /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 19/IndexedDB/https_www.thecanary.co_0.indexeddb.leveldb since it was missing.
+2025/05/06-23:21:05.715 ea6dd0 Reusing MANIFEST /Users/iabdelaz/Library/Application Support/Google/Chrome/Profile 19/IndexedDB/https_www.thecanary.co_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/06-23:21:06.878 ea6dd2 Level-0 table #5: started
+2025/05/06-23:21:06.883 ea6dd2 Level-0 table #5: 11121 bytes OK
+2025/05/06-23:21:06.884 ea6dd2 Delete type=0 #3
+2025/05/06-23:21:06.885 ea6dd0 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-23:21:23.974 ea6dde Level-0 table #7: started
+2025/05/06-23:21:23.992 ea6dde Level-0 table #7: 4047 bytes OK
+2025/05/06-23:21:24.012 ea6dde Delete type=0 #4
+2025/05/06-23:21:24.012 ea6dd0 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-23:21:28.363 ea6dd0 Level-0 table #9: started
+2025/05/06-23:21:28.376 ea6dd0 Level-0 table #9: 4158 bytes OK
+2025/05/06-23:21:28.392 ea6dd0 Delete type=0 #6
+2025/05/06-23:21:28.392 ea6dd0 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at '\x00\x04\x00\x00\x05' @ 1000 : 1
+2025/05/06-23:21:28.392 ea6dd0 Compacting 1@0 + 1@1 files
+2025/05/06-23:21:28.399 ea6dd0 Generated table #10@0: 154 keys, 2797 bytes
+2025/05/06-23:21:28.399 ea6dd0 Compacted 1@0 + 1@1 files => 2797 bytes
+2025/05/06-23:21:28.400 ea6dd0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/05/06-23:21:28.401 ea6dd0 Delete type=2 #9
+2025/05/06-23:21:28.401 ea6dd0 Manual compaction at level-0 from '\x00\x04\x00\x00\x05' @ 1000 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/06-23:21:32.546 ea6dde Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)
