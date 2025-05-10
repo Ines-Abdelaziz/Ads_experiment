@@ -46,6 +46,7 @@ for BATCH_FILE in "$BATCH_DIR"/*.csv; do
         done
 
         echo "Within allowed time window. Running batch file."
+        chmod +x Script.py  # Ensure the script is executable
         
         # Run the profile-specific script (replace with your actual task)
         ./Script.py 3 "$BATCH_FILE"

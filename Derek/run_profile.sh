@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#!/usr/bin/python3
 # === CONFIGURATION ===
 START_HOUR_1=8    # 8:00 AM - 12:00 PM
 END_HOUR_1=12
@@ -46,6 +46,8 @@ for BATCH_FILE in "$BATCH_DIR"/*.csv; do
         done
 
         echo "Within allowed time window. Running batch file."
+        chmod +x Script.py  # Ensure the script is executable
+
         
         # Run the profile-specific script (replace with your actual task)
         ./Script.py 7 "$BATCH_FILE"
