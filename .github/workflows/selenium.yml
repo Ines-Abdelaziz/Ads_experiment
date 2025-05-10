@@ -4,9 +4,9 @@ on:
   workflow_dispatch:  # Trigger manually
 
 jobs:
-  run-selenium:
+  # Job for user Alex
+  run-alex:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -33,32 +33,463 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests selenium
 
-      - name: Check if within allowed hours
-        id: check_time
+      - name: Set execute permissions for scripts
         run: |
-          # Define time ranges (US Eastern Time)
-          current_hour=$(TZ="America/New_York" date +%H)
-          if [[ "$current_hour" -ge 8 && "$current_hour" -lt 12 ]] || \
-             [[ "$current_hour" -ge 13 && "$current_hour" -lt 17 ]] || \
-             [[ "$current_hour" -ge 18 && "$current_hour" -lt 23 ]] || \
-             [[ "$current_hour" -ge 0 && "$current_hour" -lt 2 ]]; then
-            echo "Within allowed time range."
-            echo "::set-output name=proceed::true"
-          else
-            echo "Outside allowed time range. Pausing execution."
-            echo "::set-output name=proceed::false"
-          fi
+          chmod +x ./Alex/run_profile.sh
+          chmod +x ./Alex/Script.py
 
-      - name: Run user scripts
-        if: steps.check_time.outputs.proceed == 'true'
+      - name: Run user script (Alex)
         run: |
-          # Run the user's script based on passed argument
-          USER_FOLDERS=("Alex" "Alice" "Bob" "Brandon" "Christo" "Cristina" "Derek" "Georgiana" "Lexie" "Mark" "Marly" "Molly" "Neutral")
-          for USER in "${USER_FOLDERS[@]}"; do
-            echo "Running script for $USER"
-            cd ${{ github.workspace }}/$USER  # Navigate to the user-specific folder
-            chmod +x run_profile.sh
-            ./run_profile.sh /path/to/batches  # Adjust the batch path if necessary
-          done
+          ./Alex/run_profile.sh
 
-    
+  # Job for user Alice
+  run-alice:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Alice/run_profile.sh
+          chmod +x ./Alice/Script.py
+
+      - name: Run user script (Alice)
+        run: |
+          ./Alice/run_profile.sh
+
+  # Job for user Bob
+  run-bob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Bob/run_profile.sh
+          chmod +x ./Bob/Script.py
+
+      - name: Run user script (Bob)
+        run: |
+          ./Bob/run_profile.sh
+
+  # Job for user Brandon
+  run-brandon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Brandon/run_profile.sh
+          chmod +x ./Brandon/Script.py
+
+      - name: Run user script (Brandon)
+        run: |
+          ./Brandon/run_profile.sh
+
+  # Job for user Christo
+  run-christo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Christo/run_profile.sh
+          chmod +x ./Christo/Script.py
+
+      - name: Run user script (Christo)
+        run: |
+          ./Christo/run_profile.sh
+
+  # Job for user Cristina
+  run-cristina:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Cristina/run_profile.sh
+          chmod +x ./Cristina/Script.py
+
+      - name: Run user script (Cristina)
+        run: |
+          ./Cristina/run_profile.sh
+
+  # Job for user Derek
+  run-derek:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Derek/run_profile.sh
+          chmod +x ./Derek/Script.py
+
+      - name: Run user script (Derek)
+        run: |
+          ./Derek/run_profile.sh
+
+  # Repeat the pattern for other users: Georgiana, Lexie, Mark, Marly, Molly, Neutral
+  # Job for user Georgiana
+  run-georgiana:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Georgiana/run_profile.sh
+          chmod +x ./Georgiana/Script.py
+
+      - name: Run user script (Georgiana)
+        run: |
+          ./Georgiana/run_profile.sh
+  # Job for user Lexie
+  run-lexie:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Lexie/run_profile.sh
+          chmod +x ./Lexie/Script.py
+
+      - name: Run user script (Lexie)
+        run: |
+          ./Lexie/run_profile.sh
+  # Job for user Mark
+  run-mark:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Mark/run_profile.sh
+          chmod +x ./Mark/Script.py
+
+      - name: Run user script (Mark)
+        run: |
+          ./Mark/run_profile.sh
+  # Job for user Marly
+  run-marly:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Marly/run_profile.sh
+          chmod +x ./Marly/Script.py
+
+      - name: Run user script (Marly)
+        run: |
+          ./Marly/run_profile.sh
+  # Job for user Molly
+  run-molly:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Molly/run_profile.sh
+          chmod +x ./Molly/Script.py
+
+      - name: Run user script (Molly)
+        run: |
+          ./Molly/run_profile.sh
+  # Job for user Neutral
+  run-neutral:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Google Chrome & ChromeDriver
+        run: |
+            wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+            sudo apt install -y ./google-chrome-stable_current_amd64.deb
+            CHROME_VERSION=$(google-chrome --version | grep -oP "\d+\.\d+\.\d+\.\d+")
+            CHROMEDRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json" | jq -r --arg v "$CHROME_VERSION" '.channels.Stable.downloads.chromedriver[] | select(.platform == "linux64") | .url')
+            wget -O chromedriver.zip "$CHROMEDRIVER_VERSION"
+            unzip chromedriver.zip
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+            sudo chmod +x /usr/local/bin/chromedriver
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq unzip
+          python -m pip install --upgrade pip
+          pip install requests selenium
+
+      - name: Set execute permissions for scripts
+        run: |
+          chmod +x ./Neutral/run_profile.sh
+          chmod +x ./Neutral/Script.py
+
+      - name: Run user script (Neutral)
+        run: |
+          ./Neutral/run_profile.sh
